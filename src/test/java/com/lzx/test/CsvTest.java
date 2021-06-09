@@ -56,9 +56,7 @@ public class CsvTest {
             info.put("model", jsonPath(model));
             connection = DriverManager.getConnection("jdbc:calcite:", info);
             statement = connection.createStatement();
-            final ResultSet resultSet =
-                    statement.executeQuery(
-                            sql);
+            final ResultSet resultSet = statement.executeQuery(sql);
             fn.accept(resultSet);
         } finally {
             close(connection, statement);
