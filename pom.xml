@@ -8,5 +8,16 @@
     <artifactId>apache_calcite_demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.calcite</groupId>
+            <artifactId>calcite-example-csv</artifactId>
+            <version>1.21.0</version>
+        </dependency>
+    </dependencies>
 </project>
